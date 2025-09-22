@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
   if (!tabs || tabs.length === 0) {
-    return 'Error receiving data';
+    return null;
   }
 
   const activeTabExist = tabs.some(tab => tab.id === activeTabId);
